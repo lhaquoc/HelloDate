@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="UtilBuild">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../UtilBuild/net/mindview/util" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../UtilBuild" />
+    </SOURCES>
+  </library>
+</component>

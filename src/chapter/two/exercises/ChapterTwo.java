@@ -32,8 +32,14 @@ public class ChapterTwo {
 		dog.bark(1L);
 		dog.bark(1f);
 		dog.bark(1.0);
+		
+		// exercise 6
 		dog.bark(c, i);
 		dog.bark(i, 1L);
+		
+		// exercise 8
+		Exe8 exe8 = new Exe8();
+		exe8.firstMethod();
 	}
 
 }
