@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter.one.exercises;
+package chapter.everythingisobject.exercises;
 
 /**
  * @author anhquoc

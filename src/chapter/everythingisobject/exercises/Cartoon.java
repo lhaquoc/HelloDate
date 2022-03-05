@@ -1,4 +1,4 @@
-package chapter.one.exercises;
+package chapter.everythingisobject.exercises;
 import static net.mindview.util.Print.*;
 
 class Art {
