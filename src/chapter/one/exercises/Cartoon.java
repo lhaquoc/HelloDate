@@ -21,5 +21,4 @@ public class Cartoon extends Drawing {
 		// TODO Auto-generated method stub
 		Cartoon x = new Cartoon();
 	}
-
 }
