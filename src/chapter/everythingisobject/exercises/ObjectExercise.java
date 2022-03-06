@@ -17,19 +17,15 @@ class Circle {
     Coordinate coordinate;
 
     // methods
-    void EnterRadius() {
-        print("Enter radius of the circle:");
-        Scanner scanner = new Scanner(System.in);
-        radius = scanner.nextFloat();
-    }
 
     float CalculateCircumference() {
         circumference = 2 * PI * radius;
         return circumference;
     }
 
-    void CalculateArea() {
+    float CalculateArea() {
         area = PI * radius * radius;
+        return area;
     }
 
     void PrintCircumference() {
@@ -73,15 +69,6 @@ class Circle {
         this.coordinate.y = y;
     }
 
-    void EnterCoordinate() {
-        coordinate = new Coordinate();
-        Scanner scanner = new Scanner(System.in);
-        print("x = ");
-        coordinate.x = scanner.nextInt();
-        print("y = ");
-        coordinate.y = scanner.nextInt();
-    }
-
     void PrintCoordinate() {
         print("The coordinate of the circle: ");
         print("x = " + this.coordinate.x);
@@ -92,21 +79,31 @@ class Circle {
 public class ObjectExercise {
 
     public static void main(String[] args) {
+    	Scanner scanner = new Scanner(System.in);
         // TODO Auto-generated method stub
         Circle circle = new Circle();
         // enter circle radius
-        circle.EnterRadius();
+        print("Enter radius of the circle:");
+        
+        float radius = scanner.nextFloat();
+        circle.setRadius(radius);
         // enter circle coordinate
-        circle.EnterCoordinate();
-        Coordinate coordinate = circle.getCoordinate();
-        print("The coordinate of circle is: x = " + coordinate.x + ", y = " + coordinate.y);
-
-        if (circle.IsBigCircle()) {
-            print("The radius of the circle = " + circle.getRadius() + " is too big");
-        } else {
-            float circumference = circle.CalculateCircumference();
-            print("The radius of the cirlce = " + circle.getRadius() + " , circumference = " + circumference);
-        }
+        Coordinate coordinate = new Coordinate();
+        print("Enter coordinate of circle:");
+        print("x = ");
+        coordinate.x = scanner.nextInt();
+        print("y = ");
+        coordinate.y = scanner.nextInt();
+        
+        circle.setCoordinate(coordinate);
+        
+        // print out the result
+        circle.PrintRadius();
+        circle.PrintCoordinate();
+        circle.CalculateCircumference();
+        circle.CalculateArea();
+        circle.PrintCircumference();
+        circle.PrintArea();
     }
 
 }
