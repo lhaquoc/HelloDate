@@ -3,6 +3,7 @@ package shapes;
 import static net.mindview.util.Print.print;
 
 public class Shapes {
+	public static int count = 0;
 	// properties
 	final float PI = 3.14f;
 	
@@ -11,8 +12,13 @@ public class Shapes {
     public float area;
     public float volume;
     
+    // constructor
+    public Shapes() {
+    	count++;
+    }
+    
     public void PrintName() {
-    	print("\n\n===== Name = " + name + "=====");
+    	print("\n\n===== Name = " + name + " =====");
     }
     
     public void PrintCircumference() {

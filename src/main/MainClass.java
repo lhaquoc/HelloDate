@@ -1,21 +1,33 @@
 package main;
 import static net.mindview.util.Print.*;
 import shapes.Circle;
+import shapes.Configs;
 import shapes.Cylinder;
 import shapes.Rectangle;
+import shapes.Shapes;
 import shapes.Square;
 
 public class MainClass {
 
 	public static void main(String[] args) {
-		// circle
+		// test
 		Circle circle = new Circle();
-		circle.PrintName();
 		circle.EnterRadius();
-		circle.CalculateCircumference();
-		circle.CalculateArea();
-		circle.PrintCircumference();
-		circle.PrintArea();
+		circle.PrintInfo();
+		// circle
+//		Circle circle = new Circle();
+//		circle.PrintName();
+//		circle.PrintInfo();
+//		circle.EnterRadius();
+//		circle.CalculateCircumference();
+//		circle.CalculateArea();
+//		circle.PrintCircumference();
+//		circle.PrintArea();
+//		
+		// Object Class's methods
+//		print("Circle's info: \n- " + circle.getClass());
+//		print("- " +circle.getClass().getName());
+//		print("- " +circle.getClass().getSimpleName());
 		
 		// circle 2
 //		Circle circle2 = new Circle(10);
@@ -25,30 +37,40 @@ public class MainClass {
 //		circle2.PrintArea();
 		
 		// cylinder
-		Cylinder cylinder = new Cylinder();
-		cylinder.PrintName();
-		cylinder.EnterHeight();
-		cylinder.CalculateVolume();
-		cylinder.PrintVolume();
+//		Cylinder cylinder = new Cylinder();
+//		cylinder.PrintName();
+//		cylinder.PrintInfo();
+//		cylinder.EnterRadius();
+//		cylinder.EnterHeight();
+//		cylinder.CalculateVolume();
+//		cylinder.PrintVolume();
 		
 		// rectangle
-		Rectangle rectangle = new Rectangle();
-		rectangle.PrintName();
-		rectangle.EnterLength();
-		rectangle.EnterWidth();
-		rectangle.CalculateCircumference();
-		rectangle.CalculateArea();
-		rectangle.PrintCircumference();
-		rectangle.PrintArea();
+//		Rectangle rectangle = new Rectangle();
+//		rectangle.PrintName();
+//		rectangle.EnterLength();
+//		rectangle.EnterWidth();
+//		rectangle.CalculateCircumference();
+//		rectangle.CalculateArea();
+//		rectangle.PrintCircumference();
+//		rectangle.PrintArea();
 		
 		// square
-		Square square = new Square();
-		square.PrintName();
-		square.EnterSide();
-		square.CalculateCircumference();
-		square.CalculateArea();
-		square.PrintCircumference();
-		square.PrintArea();
+//		Square square = new Square();
+//		square.PrintName();
+//		square.EnterSide();
+//		square.CalculateCircumference();
+//		square.CalculateArea();
+//		square.PrintCircumference();
+//		square.PrintArea();
+		
+//		if(Shapes.count > Configs.MAX_NUM_OF_SHAPES) {
+//			print("You declared over the number of shapes");
+//			print("The minimum number of shapes is " + Configs.MIN_NUM_OF_SHAPES);
+//			print("The maximum number of shapes is " + Configs.MAX_NUM_OF_SHAPES);
+//		} else {
+//			print("There are " + Shapes.count + " shapes.");
+//		}
 	}
 
 }

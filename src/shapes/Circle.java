@@ -6,10 +6,13 @@ import java.util.Scanner;
 
 public class Circle extends Shapes {
 	// properties
-    float radius;
+	private Scanner scanner;
+    protected float radius;
     
     // constructor
     public Circle() {
+    	super();
+    	scanner = new Scanner(System.in);
     	name = "Circle";
     }
     public Circle(float radius) {
@@ -17,9 +20,29 @@ public class Circle extends Shapes {
     }
     // methods
 
+    public void PrintInfo() {
+    	print("This is a circle.");
+    	if(Configs.unit == Configs.UNIT_CM) {
+    		print("The circle has radius = " + radius + " (cm)");
+    		print("Equals " + Configs.CentimiterToInch(radius) + " (inch)");
+    	} else {
+    		print("The circle has radius = " + radius + " (inch)");
+    		print("Equals " + Configs.InchToCentimiter(radius) + " (cm)");
+    	}
+    }
+    
     public void EnterRadius() {
-    	print("Enter radius of the circle: ");
-    	Scanner scanner = new Scanner(System.in);
+    	// choose the unit cm/inch
+    	print("Enter to choose the unit:\n");
+    	print("\t1 - Centimeter");
+    	print("\t2 - Inch");
+    	Configs.unit = scanner.nextInt();
+    	if(Configs.unit == Configs.UNIT_CM) {
+    		print("Enter radius of the circle (cm): ");
+    	} else {
+    		print("Enter radius of the circle (inch): ");
+    	}
+    	
     	radius = scanner.nextFloat();
     }
     

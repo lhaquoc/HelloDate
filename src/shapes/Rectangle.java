@@ -6,11 +6,13 @@ import java.util.Scanner;
 
 public class Rectangle extends Shapes {
 	// properties
-    float length;
-    float width;
+	private Scanner scanner;
+    protected float length;
+    protected float width;
 
     // constructor
     public Rectangle() {
+    	super();
     	name = "Rectangle";
     }
     public Rectangle(float length, float width) {
@@ -23,13 +25,13 @@ public class Rectangle extends Shapes {
 
     public void EnterLength() {
     	print("Enter length of the rectangle: ");
-    	Scanner scanner = new Scanner(System.in);
+    	scanner = new Scanner(System.in);
     	length = scanner.nextFloat();
     }
     
     public void EnterWidth() {
     	print("Enter width of the rectangle: ");
-    	Scanner scanner = new Scanner(System.in);
+    	scanner = new Scanner(System.in);
     	width = scanner.nextFloat();
     }
     
