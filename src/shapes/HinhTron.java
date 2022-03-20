@@ -1,15 +1,15 @@
 package shapes;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 public class HinhTron implements HinhHoc {
 	protected String ten;
 	protected float banKinh;
-	
+
 	// constructor
 	public HinhTron(float banKinh) {
 		this.ten = "";
 		this.banKinh = banKinh;
 	}
-	
+
 	@Override
 	public float TinhChuVi() {
 		// TODO Auto-generated method stub
@@ -35,5 +35,5 @@ public class HinhTron implements HinhHoc {
 		print("Chu vi: " + TinhChuVi());
 		print("Dien tich: " + TinhDienTich());
 	}
-	
+
 }

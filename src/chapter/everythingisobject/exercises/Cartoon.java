@@ -1,5 +1,5 @@
 package chapter.everythingisobject.exercises;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class Art {
 	Art() {

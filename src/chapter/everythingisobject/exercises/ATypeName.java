@@ -1,6 +1,6 @@
 package chapter.everythingisobject.exercises;
 /**
- * 
+ *
  */
 
 /**
@@ -14,7 +14,7 @@ public class ATypeName {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

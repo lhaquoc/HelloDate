@@ -1,6 +1,6 @@
 package chapter.two.exercises;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class Go {
 	static String s1 = "run";
@@ -13,7 +13,7 @@ class Go {
 	static void how() {
 		print(s1 + " or " + s2 + " or " + s3);
 	}
-	
+
 	Go() {
 		print("Go()");
 	}

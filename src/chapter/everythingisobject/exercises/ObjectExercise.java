@@ -1,6 +1,7 @@
 package chapter.everythingisobject.exercises;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
+
 import java.util.Scanner;
 
 class Coordinate {
@@ -84,7 +85,7 @@ public class ObjectExercise {
         Circle circle = new Circle();
         // enter circle radius
         print("Enter radius of the circle:");
-        
+
         float radius = scanner.nextFloat();
         circle.setRadius(radius);
         // enter circle coordinate
@@ -94,9 +95,9 @@ public class ObjectExercise {
         coordinate.x = scanner.nextInt();
         print("y = ");
         coordinate.y = scanner.nextInt();
-        
+
         circle.setCoordinate(coordinate);
-        
+
         // print out the result
         circle.PrintRadius();
         circle.PrintCoordinate();

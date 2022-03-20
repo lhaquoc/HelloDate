@@ -1,10 +1,10 @@
 /* Create a class with two methods. Within the first method, call the
 * second method twice: the first time without using this, and the second time
-* using this - just to see it working; you should not use this form in 
+* using this - just to see it working; you should not use this form in
 * practice.
 */
 package chapter.two.exercises;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 /**
  * @author anhquoc
  *
@@ -15,7 +15,7 @@ public class Exe8 {
 		secondMethod();
 		this.secondMethod();
 	}
-	
+
 	void secondMethod() {
 		print("-Second method");
 	}

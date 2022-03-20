@@ -3,7 +3,7 @@
  */
 package chapter.two.exercises;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 /**
  * @author anhquoc
@@ -11,11 +11,11 @@ import static net.mindview.util.Print.*;
  */
 public class Dog {
 	public Dog() {}
-	
+
 	void bark() {
 		print("quiet");
 	}
-	
+
 	void bark(char c) { print("cawcaw"); }
 	void bark(byte b) { print("barkbark"); }
 	void bark(short c) { print("slurpslurp"); }

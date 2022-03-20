@@ -1,8 +1,8 @@
 /**
- * 
+ *
  */
 package chapter.two.exercises;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 /**
  * @author anhquoc
  *
@@ -11,7 +11,7 @@ public class Flower {
 
 	int petalCount = 0;
 	String s = "initial value";
-	
+
 	Flower(int petals) {
 		this.petalCount = petals;
 		print("Constructor w/ int arg only. PetalCount = " + this.petalCount);

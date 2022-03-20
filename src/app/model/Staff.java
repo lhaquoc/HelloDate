@@ -1,9 +1,9 @@
 package app.model;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 public class Staff {
 	protected String name;
 	protected long salary;
-	
+
 	public Staff() {}
 	public Staff(String name) {
 		this.name = name;
@@ -17,6 +17,6 @@ public class Staff {
 		print("- Salary: " + salary + " VND");
 	}
 	public void CalculateSalary() {
-		
+
 	}
 }

@@ -82,14 +82,14 @@ public class ExercisesOne {
 		/**
 		 * Exercise 1:(2) Create a class containing an int and a char that are not initialized, and print their
 		 *      values to verify that Java performs default initialization.
-		 *      
+		 *
 		 * @see One
 		 */
-			
+
 		One one = new One();
 		System.out.println(one.i);
 		System.out.println(one.ch);
-		
+
 		/**
          * Exercise 2:  (1) Following the HelloDate.java example in this chapter, create a hello, world program that
          *      simply displays that statement. You need only a single method in your class (the main one that gets
@@ -123,7 +123,7 @@ public class ExercisesOne {
 		data.i = 47;
 		data.d = 1.5;
 		data.b = true;
-		
+
 		System.out.println(data.i);
 		System.out.println(data.d);
 		System.out.println(data.b);
@@ -133,7 +133,7 @@ public class ExercisesOne {
          *      @see Incrementable
          */
 		Incrementable sf = new Incrementable();
-		sf.increment(); // call by creating an object, i = 48
+		Incrementable.increment(); // call by creating an object, i = 48
 		Incrementable.increment(); // call by class, i = 49
 		System.out.println(ExercisesOne.i);
 		/**
@@ -143,12 +143,12 @@ public class ExercisesOne {
          *      @see Incrementable
          */
 		Incrementable sf1 = new Incrementable();
-		sf1.increment();
+		Incrementable.increment();
 		System.out.println(ExercisesOne.i);
 		Incrementable sf2 = new Incrementable();
-		sf2.increment();
+		Incrementable.increment();
 		Incrementable sf3 = new Incrementable();
-		sf3.increment();
+		Incrementable.increment();
 		System.out.println(ExercisesOne.i);
 		/**
          * Exercise 9:  (2) Write a program that demonstrates that autoboxing works for all the primitive types and
@@ -158,37 +158,37 @@ public class ExercisesOne {
 		Integer I;
 		I = i;
 		System.out.println(I);
-		
+
 		boolean b = true;
 		Boolean B;
 		B = b;
 		System.out.println(B);
-		
+
 		char c = 'c';
 		Character C;
 		C = c;
 		System.out.println(C);
-		
+
 		byte by = 3;
 		Byte By;
 		By = by;
 		System.out.println(By);
-		
+
 		short sh = 6;
 		Short Sh;
 		Sh = sh;
 		System.out.println(Sh);
-		
+
 		long l = 9;
 		Long L;
 		L = l;
 		System.out.println(L);
-		
+
 		float f = (float)1.1;
 		Float F;
 		F = f;
 		System.out.println(F);
-		
+
 		double d = 3.4;
         Double D;
         D = d;

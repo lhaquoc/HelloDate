@@ -1,11 +1,11 @@
 package chapter.two.exercises;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class Cup {
 	Cup(int marker) {
 		print("Cup(" + marker + ")");
 	}
-	
+
 	void f(int marker) {
 		print("f(" + marker + ")");
 	}
@@ -26,6 +26,6 @@ class Cups {
 public class ExplicitStatic {
 	public static void main(String[] args) {
 		Cups.cup1.f(99);
-		
+
 	}
 }

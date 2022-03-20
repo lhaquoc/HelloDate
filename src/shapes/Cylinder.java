@@ -1,5 +1,5 @@
 package shapes;
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 import java.util.Scanner;
 public class Cylinder extends Circle {
@@ -12,15 +12,15 @@ public class Cylinder extends Circle {
 		name = "Cylinder";
 	}
 	// methods
-	
-	
+
+
 	public void EnterHeight() {
 //		EnterRadius();
 		print("Enter height of the cylinder: ");
 		scanner = new Scanner(System.in);
 		height = scanner.nextFloat();
 	}
-	
+
 	@Override
 	public void EnterRadius() {
 		// TODO Auto-generated method stub

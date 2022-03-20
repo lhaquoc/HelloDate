@@ -8,7 +8,7 @@ public class PartTimeStaff extends Staff {
 		this.name = name;
 		this.numberWorkHour = numberWorkHour;
 	}
-	
+
 	@Override
 	protected String StaffType() {
 		// TODO Auto-generated method stub

@@ -1,12 +1,12 @@
 package chapter.two.exercises;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 class Bowl {
 	public Bowl(int marker) {
 		print("Bowl(" + marker + ")");
 	}
-	
+
 	void f1(int marker) {
 		print("f1(" + marker + ")");
 	}
@@ -14,17 +14,17 @@ class Bowl {
 
 class Table {
 	static Bowl bowl1 = new Bowl(1);
-	
+
 	public Table() {
 		// TODO Auto-generated constructor stub
 		print("Table()");
 		bowl2.f1(1);
 	}
-	
+
 	void f2(int marker) {
 		print("f2(" + marker + ")");
 	}
-	
+
 	static Bowl bowl2 = new Bowl(2);
 }
 
@@ -36,11 +36,11 @@ class Cupboard {
 		print("Cupboard()");
 		bowl4.f1(2);
 	}
-	
+
 	void f3(int marker) {
 		print("f3(" + marker + ")");
 	}
-	
+
 	static Bowl bowl5 = new Bowl(5);
 }
 

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package chapter.everythingisobject.exercises;
 

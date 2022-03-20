@@ -1,6 +1,6 @@
 package shapes;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Circle extends Shapes {
 	// properties
 	private Scanner scanner;
     protected float radius;
-    
+
     // constructor
     public Circle() {
     	super();
@@ -30,7 +30,7 @@ public class Circle extends Shapes {
     		print("Equals " + Configs.InchToCentimiter(radius) + " (cm)");
     	}
     }
-    
+
     public void EnterRadius() {
     	// choose the unit cm/inch
     	print("Enter to choose the unit:\n");
@@ -42,10 +42,10 @@ public class Circle extends Shapes {
     	} else {
     		print("Enter radius of the circle (inch): ");
     	}
-    	
+
     	radius = scanner.nextFloat();
     }
-    
+
     public void CalculateCircumference() {
         circumference = 2 * PI * radius;
     }

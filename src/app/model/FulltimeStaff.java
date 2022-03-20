@@ -12,7 +12,7 @@ public class FulltimeStaff extends Staff {
 		this.numberOverTimeDay = numberOverTimeDay;
 		this.level = level;
 	}
-	
+
 	public void setLevel(int level) {
 		this.level = level;
 	}
@@ -30,6 +30,6 @@ public class FulltimeStaff extends Staff {
 			salary = Configs.SALARY_FULLTIME_STAFF + numberOverTimeDay * Configs.SALARY_OVER_TIME_ONE_DAY;
 		else if(level == Configs.STAFF_MANAGER)
 			salary = Configs.SALARY_FULLTIME_MANAGER + numberOverTimeDay * Configs.SALARY_OVER_TIME_ONE_DAY;
-			
+
 	}
 }

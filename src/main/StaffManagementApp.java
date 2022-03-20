@@ -1,13 +1,12 @@
 package main;
 
+import static net.mindview.util.Print.print;
+
+import java.util.Scanner;
+
 import app.model.FulltimeStaff;
 import app.model.PartTimeStaff;
 import app.model.Staff;
-import app.util.Configs;
-
-import static net.mindview.util.Print.*;
-
-import java.util.Scanner;
 
 public class StaffManagementApp {
 
@@ -18,7 +17,7 @@ public class StaffManagementApp {
 //		manager.setLevel(Configs.STAFF_MANAGER);
 //		FulltimeStaff staff1 =  new FulltimeStaff("Jimmy Carter"); // 0 overtime day
 //		FulltimeStaff staff2 =  new FulltimeStaff("Barrack Obama", 3); // 3 overtime days
-		
+
 		// calculate salary
 //		manager.CalculateSalary();
 //		staff1.CalculateSalary();
@@ -26,18 +25,18 @@ public class StaffManagementApp {
 //		manager.PrintInfo();
 //		staff1.PrintInfo();
 //		staff2.PrintInfo();
-		
+
 		// 1 part-time staff, work 30h/week
 //		PartTimeStaff partTimeStaff = new PartTimeStaff("Joe Biden", 120);
 //		partTimeStaff.CalculateSalary();
 //		partTimeStaff.PrintInfo();
-		
+
 		// improvement
 		// input the number of staffs
 		Scanner scanner = new Scanner(System.in);
 		print("Enter the number of staffs: ");
 		int numberStaffs = Integer.parseInt(scanner.nextLine());
-		
+
 		Staff[] staffArray = new Staff[numberStaffs];
 		for(int i = 0; i < numberStaffs; i++) {
 			print("Name of staff " + (i + 1) + ": ");

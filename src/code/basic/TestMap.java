@@ -2,7 +2,6 @@ package code.basic;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -10,7 +9,7 @@ class Bowling {
 	HashMap<String, Integer> players;
 
 	Bowling() {
-		players = new HashMap<String, Integer>();
+		players = new HashMap<>();
 	}
 
 	public void addPlayer(String name, int p) {

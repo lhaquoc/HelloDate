@@ -1,6 +1,6 @@
 package shapes;
 
-import static net.mindview.util.Print.*;
+import static net.mindview.util.Print.print;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class Rectangle extends Shapes {
     	this.length = length;
     	this.width = width;
     }
-    
+
     // methods
 
     public void EnterLength() {
@@ -28,13 +28,13 @@ public class Rectangle extends Shapes {
     	scanner = new Scanner(System.in);
     	length = scanner.nextFloat();
     }
-    
+
     public void EnterWidth() {
     	print("Enter width of the rectangle: ");
     	scanner = new Scanner(System.in);
     	width = scanner.nextFloat();
     }
-    
+
     public void CalculateCircumference() {
         circumference = 2 * (length + width);
     }
